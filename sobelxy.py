@@ -93,7 +93,7 @@ def convolution(img_matrix,sobelx,sobely):
 
 def main():
     print("__Reading the given image : task1.png__")
-    img = get_image_gray('task1.png')
+    img = get_image_gray('test.png')
     sobelX = np.asarray(get_sobel('sobelX'),dtype='float32')
     sobelY = np.asarray(get_sobel('sobelY'),dtype='float32')
     sobelX_img,sobelY_img,gradient_img = convolution(img,sobelX,sobelY)
